@@ -15,7 +15,7 @@ function Proyectos() {
                 tituloProyectos="Acortador de url con QR"
                 descripcion="Servicio de acortador de url con estadisticas y seguridad de tu url, ademas de creación de codigos QR. "
                 imagen1={acortadorImg1}
-                tecnologia={["NodeJs", "ReactJs", "Firebase", "mongoDB"]}
+                tecnologia={["Tailwind", "NodeJs", "ReactJs", "Firebase", "mongoDB"]}
             />
             <CardProyectos
                 tituloProyectos={"Ani-Mate RA"}

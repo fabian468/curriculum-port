@@ -22,7 +22,7 @@ function QuienSoy1() {
                     Creo que la programación no solo se trata de código, sino de <span className="font-semibold text-pink-400">resolver problemas reales</span> y hacer el mundo un lugar mejor.
                 </p>
                 <p className="text-lg">
-                    Si quieres saber más sobre mí o colaborar en un proyecto, <span className="text-yellow-400 font-semibold underline cursor-pointer">no dudes en contactarme.</span>
+                    Si quieres saber más sobre mí o colaborar en un proyecto, <span className="text-yellow-400 font-semibold underline cursor-pointer"><a href="#contacto">no dudes en contactarme.</a></span>
                 </p>
             </div>
 
