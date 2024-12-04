@@ -1,6 +1,8 @@
 import './App.css'
 import Navegador from './components/componenteNavegador/Navegador'
+import QuienSoy1 from './components/componenteQuienSoy/QuienSoy1'
 import Proyectos from './components/ComponentesProyectos/Proyectos'
+import Tecnologias from './components/componentesTecnologias/Tecnologias'
 import PaginaPrincipal from './components/yo/PaginaPrincipal'
 
 
@@ -14,6 +16,8 @@ function App() {
       <div className='flex justify-center items-center flex-col  '>
         <PaginaPrincipal />
         <Proyectos />
+        <QuienSoy1 />
+        <Tecnologias />
       </div>
     </div>
   )

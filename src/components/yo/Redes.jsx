@@ -10,7 +10,7 @@ function Redes() {
             <ul className="text-white flex justify-evenly mt-6">
                 <Boton red={"Facebook"} href={""} logo={<FaFacebookSquare />} />
                 <Boton red={"Github"} href={"https://github.com/fabian468"} logo={<LuGithub />} />
-                <Boton red={"Linkedin"} href={""} logo={<FaLinkedin />
+                <Boton red={"Linkedin"} href={"https://www.linkedin.com/in/fabian369/"} logo={<FaLinkedin />
                 } />
             </ul>
         </>
