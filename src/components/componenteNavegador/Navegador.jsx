@@ -8,7 +8,7 @@ function Navegador() {
             <BotonNavegador ad={<FaHome />} href={"#home"} />
             <BotonNavegador ad={"Proyectos"} href={"#proyectos"} />
             <BotonNavegador ad={"Quien soy"} href={"#quienSoy"} />
-            <BotonNavegador ad={"Tecnologias"} href={"#tecnologias"} />
+            <BotonNavegador ad={"Tecnologías"} href={"#tecnologias"} />
             <BotonNavegador ad={"Contacto"} href={"#contacto"} />
         </ul>
     )

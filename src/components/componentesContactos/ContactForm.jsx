@@ -1,10 +1,12 @@
 import { useForm } from "react-hook-form";
+import emailjs from "emailjs-com";
 
 const ContactForm = () => {
     const {
         register,
         handleSubmit,
         formState: { errors },
+        reset
     } = useForm();
 
     const onSubmit = async (data) => {
@@ -14,24 +16,28 @@ const ContactForm = () => {
         const email = data.email
         const message = data.message
 
-        try {
-            const response = await fetch("http://localhost:3001/send-email", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
+        emailjs
+            .send(
+                "service_1uquuvv",
+                "template_ler82s9",
+                {
+                    user_name: name,
+                    user_email: email,
+                    message: message,
                 },
-                body: JSON.stringify({ name, email, message }),
-            });
-
-            if (response.ok) {
-                alert("Correo enviado exitosamente.");
-            } else {
-                alert("Hubo un problema al enviar el correo.");
-            }
-        } catch (error) {
-            console.error("Error al enviar el formulario:", error);
-            alert("Error al enviar el correo.");
-        }
+                "XYJicd5hJVtlJZNC7"
+            )
+            .then(
+                (result) => {
+                    console.log("Correo enviado:", result.text);
+                    alert("¡Correo enviado con éxito!");
+                    reset()
+                },
+                (error) => {
+                    console.error("Error al enviar el correo:", error.text);
+                    alert("Hubo un error al enviar el correo.");
+                }
+            );
     };
 
     return (
