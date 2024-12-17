@@ -7,9 +7,31 @@ const ContactForm = () => {
         formState: { errors },
     } = useForm();
 
-    const onSubmit = (data) => {
+    const onSubmit = async (data) => {
         console.log("Datos enviados:", data);
-        alert("¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.");
+
+        const name = data.name
+        const email = data.email
+        const message = data.message
+
+        try {
+            const response = await fetch("http://localhost:3001/send-email", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ name, email, message }),
+            });
+
+            if (response.ok) {
+                alert("Correo enviado exitosamente.");
+            } else {
+                alert("Hubo un problema al enviar el correo.");
+            }
+        } catch (error) {
+            console.error("Error al enviar el formulario:", error);
+            alert("Error al enviar el correo.");
+        }
     };
 
     return (
@@ -70,7 +92,7 @@ const ContactForm = () => {
                             id="message"
                             {...register("message", { required: "El mensaje es obligatorio" })}
                             rows="5"
-                            className={`mt-1 block w-full p-2 border rounded-md ${errors.message ? "border-red-500" : "border-gray-300"
+                            className={`mt-1  resize-none block w-full p-2 border rounded-md ${errors.message ? "border-red-500" : "border-gray-300"
                                 }`}
                             placeholder="Escribe tu mensaje"
                         ></textarea>

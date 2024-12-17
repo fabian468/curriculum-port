@@ -29,9 +29,9 @@ function Tecnologias() {
     ];
 
     return (
-        <div id="tecnologias" className="w-4/5 py-12 h-[100vh]">
+        <section id="tecnologias" className="md:w-4/5 py-12 md:h-[100vh]">
             <h2 className="text-center text-white text-3xl font-bold mt-7 mb-8 flex justify-center items-center">Tecnologías que domino</h2>
-            <div className="flex flex-wrap justify-center gap-6">
+            <div className="grid grid-cols-2 md:flex md:flex-wrap md:justify-center gap-6">
                 {technologies.map((tech, index) => (
                     <CardTecnologias
                         key={index}
@@ -41,7 +41,7 @@ function Tecnologias() {
                     />
                 ))}
             </div>
-        </div>
+        </section>
 
     )
 }

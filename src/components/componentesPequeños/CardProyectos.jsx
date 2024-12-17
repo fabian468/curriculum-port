@@ -1,26 +1,25 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
-function CardProyectos({ tituloProyectos, imagen1, descripcion, tecnologia }) {
+function CardProyectos({ id, tituloProyectos, imagen1, descripcion, tecnologia }) {
     return (
-        <div className="w-3/12 h-4/5 flex flex-col justify-evenly bg-gray-200 rounded-xl shadow-md shadow-white font-serif">
-            {/* Título */}
-            <h2 className="text-center text-2xl font-bold mb-4">
+        <article className="md:w-3/12 h-auto md:h-4/5  md:mt-0 mt-12 flex flex-col justify-evenly bg-gray-200 rounded-xl shadow-md shadow-white font-serif">
+            <h2 className="text-center mt-2 md:mt-0 text-2xl font-bold mb-4">
                 {tituloProyectos}
             </h2>
 
-            {/* Imágenes */}
+
             <div className="flex justify-center mb-5">
                 <img src={imagen1} alt="Imagen 1" className=" rounded-xl" />
                 {/* {<img src={imagen2} alt="Imagen 2" className="w-1/2 rounded" />} */}
             </div>
 
-            {/* Descripción */}
+
             <hr className="my-4 border-gray-400" />
             <p className="text-justify mb-4 p-4">
                 {descripcion}
             </p>
 
-            {/* Tecnologías */}
             {tecnologia && (
                 <div className="flex flex-wrap justify-center gap-2 mb-4">
                     {tecnologia.map((tecno, i) => (
@@ -33,23 +32,22 @@ function CardProyectos({ tituloProyectos, imagen1, descripcion, tecnologia }) {
                     ))}
                 </div>
             )}
-
-            {/* Enlace */}
             <div className="flex justify-center">
-                <a
-                    href="#"
+                <Link
+                    to={`/uproyecto/${id}`}
                     className="text-white bg-black px-4 py-2 rounded-lg hover:bg-gray-800 transition"
                 >
                     Ver más
-                </a>
+                </Link>
             </div>
-        </div>
+        </article>
     );
 }
 
 CardProyectos.propTypes = {
     tituloProyectos: PropTypes.string,
     imagen1: PropTypes.string,
+    id: PropTypes.string,
     imagen2: PropTypes.string,
     descripcion: PropTypes.string,
     tecnologia: PropTypes.array,
