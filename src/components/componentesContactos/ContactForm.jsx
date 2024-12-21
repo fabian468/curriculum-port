@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
+import { showSwal } from "./AlertEmail";
 
 const ContactForm = () => {
     const {
@@ -10,7 +11,6 @@ const ContactForm = () => {
     } = useForm();
 
     const onSubmit = async (data) => {
-        console.log("Datos enviados:", data);
 
         const name = data.name
         const email = data.email
@@ -30,7 +30,7 @@ const ContactForm = () => {
             .then(
                 (result) => {
                     console.log("Correo enviado:", result.text);
-                    alert("¡Correo enviado con éxito!");
+                    showSwal(name)
                     reset()
                 },
                 (error) => {
@@ -42,13 +42,13 @@ const ContactForm = () => {
 
     return (
         <section id="contacto" className="py-10">
-            <div className="max-w-4xl mx-auto px-4 m-16">
+            <div className="md:max-w-4xl mx-auto px-4 m-16">
                 <h2 className="text-3xl font-bold text-center mb-6 text-gray-50">
                     Contáctame
                 </h2>
                 <form
                     onSubmit={handleSubmit(onSubmit)}
-                    className="bg-white shadow-md rounded-lg p-6 space-y-4"
+                    className="bg-gray-200 shadow-md rounded-lg p-6 space-y-4"
                 >
                     <div>
                         <label htmlFor="name" className="block text-sm font-medium text-gray-700">

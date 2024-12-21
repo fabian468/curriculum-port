@@ -3,16 +3,15 @@ import { BsFiletypeHtml } from "react-icons/bs";
 import { FaCss3Alt } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaJs } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
-import { FaNode } from "react-icons/fa";
+import { FaReact, FaNode } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { BsFiletypeSql } from "react-icons/bs";
 import { FaPython } from "react-icons/fa";
-import { SiDjango } from "react-icons/si";
-import { SiPandas } from "react-icons/si";
+import { SiDjango, SiPandas } from "react-icons/si";
+import { FaGitAlt, FaGithub } from 'react-icons/fa';
+
 
 function Tecnologias() {
-
 
     const technologies = [
         { icon: <BsFiletypeHtml />, title: "HTML", description: "Estructura de páginas" },
@@ -26,10 +25,13 @@ function Tecnologias() {
         { icon: <FaPython />, title: "Python", description: "Automatización y desarrollo" },
         { icon: <SiDjango />, title: "Django", description: "Framework web robusto" },
         { icon: <SiPandas />, title: "Pandas", description: "Análisis de datos" },
+        { icon: <FaGitAlt />, title: "Git", description: "Control de versiones" },
+        { icon: <FaGithub />, title: "GitHub", description: "Colaboración en repositorios" },
     ];
 
+
     return (
-        <section id="tecnologias" className="md:w-4/5 py-12 md:h-[100vh]">
+        <section id="tecnologias" className="md:w-4/5 lg:w-full py-12 md:h-[100vh]">
             <h2 className="text-center text-white text-3xl font-bold mt-7 mb-8 flex justify-center items-center">Tecnologías que domino</h2>
             <div className="grid grid-cols-2 md:flex md:flex-wrap md:justify-center gap-6">
                 {technologies.map((tech, index) => (

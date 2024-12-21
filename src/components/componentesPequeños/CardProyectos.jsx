@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function CardProyectos({ id, tituloProyectos, imagen1, descripcion, tecnologia }) {
     return (
-        <article className="md:w-3/12 h-auto md:h-4/5  md:mt-0 mt-12 flex flex-col justify-evenly bg-gray-200 rounded-xl shadow-md shadow-white font-serif">
+        <article className="md:w-3/12 w-10/12 p-2 h-auto md:h-4/5  md:mt-0 mt-12 flex flex-col justify-evenly bg-gray-200 rounded-xl shadow-sm  font-serif">
             <h2 className="text-center mt-2 md:mt-0 text-2xl font-bold mb-4">
                 {tituloProyectos}
             </h2>
