@@ -1,7 +1,7 @@
 import Fotos from "./Fotos"
 import Redes from "./Redes"
 import Yo from "./yo"
-import yo from "../../image/yo.jpeg"
+import yo from "../../image/yo.webp"
 
 function PaginaPrincipal() {
     return (

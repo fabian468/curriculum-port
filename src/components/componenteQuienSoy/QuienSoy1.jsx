@@ -1,4 +1,4 @@
-import quiensoy from "../../image/quienSoy.jpeg";
+import quiensoy from "../../image/quienSoy.webp";
 import Fotos from "../yo/Fotos";
 
 function QuienSoy1() {
