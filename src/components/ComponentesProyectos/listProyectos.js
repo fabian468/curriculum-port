@@ -10,12 +10,6 @@ import acortadorImg3 from "../../image/proyectos/acortadorUrls/b.png"
 import acortadorImg4 from "../../image/proyectos/acortadorUrls/d.png"
 
 import necesitounservicioImg1 from "../../image/proyectos/necesitoUnServicio/1.png"
-// import necesitounservicioImg2 from "../../image/proyectos/necesitoUnServicio/2.png"
-// import necesitounservicioImg3 from "../../image/proyectos/necesitoUnServicio/3.png"
-// import necesitounservicioImg4 from "../../image/proyectos/necesitoUnServicio/4.png"
-
-
-
 
 export const listProyectos = [
     {
