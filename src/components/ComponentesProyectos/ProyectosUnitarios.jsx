@@ -32,7 +32,9 @@ function ProyectosUnitarios() {
                 <Link to={"../"} className="md:text-3xl absolute top-0 items-center md:top-6 right-6 text-blue-800 flex"><FaArrowLeft />Volver</Link>
                 <h2 className="text-center text-4xl">{proyectoSeleccionado?.nombre}</h2>
                 <p className="text-center">{proyectoSeleccionado?.descripcion}</p>
-                {<img src={proyectoSeleccionado?.imagen} className="md:w-2/3 rounded-md" alt="" />}
+                <div className="flex justify-center aspect-auto">
+                    {<img src={proyectoSeleccionado?.imagen} className="md:w-2/3 rounded-md md:max-h-80" alt="" />}
+                </div>
                 {proyectoSeleccionado?.tecnologia && (
                     <div className="flex flex-wrap justify-center gap-2 mb-4">
                         {proyectoSeleccionado.tecnologia.map((tecno, i) => (

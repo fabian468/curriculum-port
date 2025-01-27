@@ -9,6 +9,14 @@ import acortadorImg2 from "../../image/proyectos/acortadorUrls/c.png"
 import acortadorImg3 from "../../image/proyectos/acortadorUrls/b.png"
 import acortadorImg4 from "../../image/proyectos/acortadorUrls/d.png"
 
+import necesitounservicioImg1 from "../../image/proyectos/necesitoUnServicio/1.png"
+// import necesitounservicioImg2 from "../../image/proyectos/necesitoUnServicio/2.png"
+// import necesitounservicioImg3 from "../../image/proyectos/necesitoUnServicio/3.png"
+// import necesitounservicioImg4 from "../../image/proyectos/necesitoUnServicio/4.png"
+// import necesitounservicioImg5 from "../../image/proyectos/necesitoUnServicio/5.png"
+
+
+
 export const listProyectos = [
     {
         id: 1,
@@ -60,9 +68,9 @@ export const listProyectos = [
     },
     {
         id: 3,
-        nombre: "Ani-Mate RA",
-        descripcion: "Juego de realidad aumentada para niños. ",
-        imagen: 'https://via.placeholder.com/150',
-        tecnologia: ["C#", "Unity", "Vuforia"]
+        nombre: "necesitoUnServicio.cl",
+        descripcion: "Plataforma de servicios en línea que conecta a personas que necesitan un servicio con profesionales que lo ofrecen.",
+        imagen: necesitounservicioImg1,
+        tecnologia: ["react vite", "node js ", "firebase", "mongoDB", "tailwind"],
     },
 ];

@@ -9,11 +9,9 @@ function CardProyectos({ id, tituloProyectos, imagen1, descripcion, tecnologia }
             </h2>
 
 
-            <div className="flex justify-center mb-5">
-                <img src={imagen1} alt="Imagen 1" className=" rounded-xl" />
-                {/* {<img src={imagen2} alt="Imagen 2" className="w-1/2 rounded" />} */}
+            <div className="flex justify-center aspect-auto mb-5">
+                <img src={imagen1} alt="Imagen 1" className="max-w-full max-h-48 rounded-xl object-contain" />
             </div>
-
 
             <hr className="my-4 border-gray-400" />
             <p className="text-justify mb-4 p-4">
