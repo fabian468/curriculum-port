@@ -66,5 +66,6 @@ export const listProyectos = [
         descripcion: "Plataforma de servicios en línea que conecta a personas que necesitan un servicio con profesionales que lo ofrecen.",
         imagen: necesitounservicioImg1,
         tecnologia: ["react vite", "node js ", "firebase", "mongoDB", "tailwind"],
+        estado: "En desarrollo",
     },
 ];
