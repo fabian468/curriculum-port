@@ -30,10 +30,10 @@ function ProyectosUnitarios() {
         <section key="slide1" className="w-full flex-shrink-0 flex items-center justify-evenly h-[100vh]">
             <article className=" relative w-full md:w-10/12 h-4/5 flex flex-col items-center gap-4 p-3 justify-evenly bg-gray-200 rounded-xl shadow-md shadow-white font-serif">
                 <Link to={"../"} className="md:text-3xl absolute top-0 items-center md:top-6 right-6 text-blue-800 flex"><FaArrowLeft />Volver</Link>
-                <h2 className="text-center text-4xl">{proyectoSeleccionado?.nombre}</h2>
+                <h2 className="text-center text-3xl">{proyectoSeleccionado?.nombre}</h2>
                 <p className="text-center">{proyectoSeleccionado?.descripcion}</p>
                 <div className="flex justify-center aspect-auto">
-                    {<img src={proyectoSeleccionado?.imagen} className="md:w-2/3 rounded-md md:max-h-80" alt="" />}
+                    {<img src={proyectoSeleccionado?.imagen} className="md:w-2/3 rounded-md md:max-h-80 max-h-40" alt="" />}
                 </div>
                 {proyectoSeleccionado?.tecnologia && (
                     <div className="flex flex-wrap justify-center gap-2 mb-4">
