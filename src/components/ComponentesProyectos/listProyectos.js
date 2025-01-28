@@ -9,7 +9,7 @@ import acortadorImg2 from "../../image/proyectos/acortadorUrls/c.png"
 import acortadorImg3 from "../../image/proyectos/acortadorUrls/b.png"
 import acortadorImg4 from "../../image/proyectos/acortadorUrls/d.png"
 
-// import necesitounservicioImg1 from "../../image/proyectos/necesitoUnServicio/1.png"
+import necesitounservicioImg1 from "../../image/proyectos/necesitoUnServicio/a.png"
 
 export const listProyectos = [
     {
@@ -64,7 +64,7 @@ export const listProyectos = [
         id: 3,
         nombre: "necesitoUnServicio.cl",
         descripcion: "Plataforma de servicios en línea que conecta a personas que necesitan un servicio con profesionales que lo ofrecen.",
-        imagen: acortadorImg4,
+        imagen: necesitounservicioImg1,
         tecnologia: ["react vite", "node js ", "firebase", "mongoDB", "tailwind"],
         estado: "En desarrollo ",
     },
